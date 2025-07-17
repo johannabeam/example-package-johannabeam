@@ -6,8 +6,11 @@ build-backend = "hatchling.build"
 
 [project] 
 name = "example_package_johannabeam" 
-version = "0.1.0" 
 dependencies = ["numpy"]
+dynamic = ["version"] 
+
+[tool.hatch]
+version.path = "src/example_package_johannabeam/__init__.py"
 
 # In pyproject.toml
 
